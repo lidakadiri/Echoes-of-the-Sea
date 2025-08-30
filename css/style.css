@@ -98,7 +98,6 @@ h2, h3 {
     color: #fcfaef;
 }
 
-/* Intro Section */
 .intro {
   padding: 3rem 2rem;
   background: #f2eada;
@@ -110,7 +109,6 @@ h2, h3 {
   margin-bottom: 1rem;
 }
 
-/* CTA Section */
 .cta {
   display: flex;
   justify-content: center;
@@ -201,7 +199,7 @@ h2, h3 {
 }
 
 /*******************************
- *  COuntdown Pages for le trailer et le stream
+ *  Countdown Pages for le trailer et le stream
  *******************************/
 
 #countdownTrailer,
@@ -234,12 +232,11 @@ h2, h3 {
 #director-profile {
   flex: 0 0 30%;                /* fixed width at 30% */
   display: flex;
-  justify-content: flex-end;    /* pushes the card to the far right */
+  justify-content: flex-end; 
 }
 
-/* Director profile card */
 .director-card {
-  width: 350px; /* rectangular card */
+  width: 350px; 
   background: rgba(75, 101, 140, 0.4);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -274,7 +271,6 @@ h2, h3 {
   font-weight: bold;
 }
 
-/* Left-side content */
 #about-content {
   flex: 1;
   max-width: 65%;
@@ -285,7 +281,6 @@ h2, h3 {
   text-align: justify;
 }
 
-/* Cast icons row */
 .cast-icons {
   display: flex;
   flex-wrap: wrap;
@@ -308,7 +303,7 @@ h2, h3 {
   transform: scale(1.5);
 }
 
-/* Character profile box */
+/* charracter profile box */
 #characterBox {
   margin-top: 2em;
   display: flex;
@@ -327,7 +322,6 @@ h2, h3 {
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-/* Character portrait inside card */
 .character-card img {
   width: 150px;
   height: 150px;
@@ -355,7 +349,6 @@ h2, h3 {
  *  runes paage
  *******************************/
 
-/* Rune icon styling */
 .rune-icons {
   display: flex;
   justify-content: center;
@@ -381,10 +374,9 @@ h2, h3 {
 #runeBox {
     margin-top: 2em;
     display: flex;
-    justify-content: center; /* center horizontally */
+    justify-content: center;
 }
 
-/* Rune card */
 .rune-card {
     max-width: 550px;
     background: #fffef9;
@@ -393,7 +385,6 @@ h2, h3 {
     text-align: center;
 }
 
-/* Rune image inside card */
 .rune-card img {
   width: 120px;
   height: 180px;
@@ -401,8 +392,6 @@ h2, h3 {
   margin-bottom: 1em;
 }
 
-
-/* Footer */
 footer {
     width: 100vw;
     text-align: center;
