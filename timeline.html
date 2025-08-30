@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Lore - Echoes of the Sea</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Echoes of the Sea Logo">
+        </a>
+        <a href="index.html" class="title">
+          <img src="assets/echoes-title.png" alt="Echoes of the Sea Title">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="film.html">About the Film</a>
+        <a href="runes.html">Runes</a>
+        <a href="timeline.html">Lore</a>
+        <a href="trailer.html">Trailer</a>
+        <a href="stream.html">Streaming</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1>The Lore</h1>
+    <p>Explore the history and hidden secrets of the sea.</p>
+      <h3>Select a point in history...</h3>    
+    <div id="timelineBox">
+        <div class="timeline">
+          <div class="notch" onclick="showTimeline(1)">1</div>
+          <div class="notch" onclick="showTimeline(2)">2</div>
+          <div class="notch" onclick="showTimeline(3)">3</div>
+          <div class="notch" onclick="showTimeline(4)">4</div>
+          <div class="notch" onclick="showTimeline(5)">5</div>
+        </div>
+        </div>
+        <!-- hidden content box -->
+  <div id="timelineContent">
+    <p>Select a point on the timeline to reveal its story.</p>
+  </div>
+  </main>
+      <script src="js/script.js" defer></script>
+
+  <footer>
+    <p>&copy; 2025 Echoes of the Sea. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Runes - Echoes of the Sea</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Echoes of the Sea Logo">
+        </a>
+        <a href="index.html" class="title">
+          <img src="assets/echoes-title.png" alt="Echoes of the Sea Title">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="film.html">About the Film</a>
+        <a href="runes.html">Runes</a>
+        <a href="timeline.html">Lore</a>
+        <a href="trailer.html">Trailer</a>
+        <a href="stream.html">Streaming</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1>The Runes</h1>
+    <p>Discover the six runes and their meanings.</p>
+  
+
+    <div class="rune-icons">
+    <img src="assets/rune1.png" alt="Rune of Tides" class="rune-icon" onclick="showRune('tides')">
+    <img src="assets/rune2.png" alt="Rune of Depths" class="rune-icon" onclick="showRune('depths')">
+    <img src="assets/rune3.png" alt="Rune of Storms" class="rune-icon" onclick="showRune('storms')">
+    <img src="assets/rune4.png" alt="Rune of Echoes" class="rune-icon" onclick="showRune('echoes')">
+    <img src="assets/rune5.png" alt="Rune of Guardians" class="rune-icon" onclick="showRune('guardians')">
+    <img src="assets/rune6.png" alt="Rune of Luminescence" class="rune-icon" onclick="showRune('luminescence')">
+    </div>
+
+    <div id="runeBox">Click a rune to reveal its prophecy...</div>
+  </main>
+      <script src="js/script.js" defer></script>
+
+  <footer>
+    <p>&copy; 2025 Echoes of the Sea. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

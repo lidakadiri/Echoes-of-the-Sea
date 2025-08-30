@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>About the Film - Echoes of the Sea</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Echoes of the Sea Logo">
+        </a>
+        <a href="index.html" class="title">
+          <img src="assets/echoes-title.png" alt="Echoes of the Sea Title">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="film.html">About the Film</a>
+        <a href="runes.html">Runes</a>
+        <a href="timeline.html">Lore</a>
+        <a href="trailer.html">Trailer</a>
+        <a href="stream.html">Streaming</a>
+      </div>
+    </nav>
+  </header>
+
+<main class="main-container">
+  <h1>About the Film</h1>
+
+  <div id="about-layout">
+    <div id="about-content">
+      <section>
+        <h2>Synopsis</h2>
+          <p>On a remote island battered by restless tides, Isla, a young marine biologist 
+          begins hearing whispers from the deep, haunting voices that no one else can hear.
+          Drawn into the ocean’s mysteries, they uncover fragments of a long-lost civilisation 
+          swallowed by the sea and bound to an ancient guardian. As dreams blur into reality 
+          and the whispers grow louder, they must decide whether to embrace the call of the deep
+          or risk unleashing a forgotten power upon the world above.
+        </p>
+        <p>Blending myth and science, Echoes of the Sea is a cinematic journey into the 
+          unknown, where the ocean is both sanctuary and threat, and every wave carries a
+          secret older than memory itself.
+        </p>
+
+      </section>
+
+      <section><h2>Director’s Vision</h2>
+        <p>Echoes of the Sea was born from a fascination with the spaces where human 
+          imagination collides with the natural world. For the director, the ocean has always
+          been more than a backdrop—it is a living presence, a force that holds memory, history,
+          and mystery within its depths.
+        </p>
+        <p>Her vision was to create a film that treats the sea not just as setting, but as a 
+          character in its own right: alluring, dangerous, and deeply ancient. By weaving 
+          together myth, fantasy, and science, she sought to immerse audiences in a story that
+          feels both timeless and urgent—a reminder of how much we have forgotten, and how much
+          remains hidden beneath the waves.
+        </p>
+
+        <h3>Origins of the Idea</h3>
+        <p>The spark for the film came during a solitary dive off a rugged coastline where the director
+          grew up. Descending into the stillness, she felt surrounded by silence yet overwhelmed by the
+          sensation of countless unseen lives. Later, she described it as if “the ocean itself was 
+          trying to speak.” That moment became the seed for Echoes of the Sea.
+        </p>
+                
+      </section>
+    </div>
+
+    <section id="director-profile">
+      <div class="director-card">
+        <div class="director-photo">
+          <img src="assets/director.jpg" alt="Director of Echoes of the Sea">
+        </div>
+        <div class="director-bio">
+          <h2>Director’s Profile</h2>          
+            <p>Amara Vey was born on April 12, 1982, in Monterey, California. Growing up along the 
+            Pacific coast, she developed a deep connection to the sea and its stories, 
+            often sketching marine life and recording the sounds of waves as a child.
+          </p>
+          <p>After studying film at UCLA, Amara began her career in documentary filmmaking, 
+            exploring themes of nature and human connection. <em>Echoes of the Sea </em>
+            is her most personal work yet—drawing on her lifelong fascination with myths 
+            of the ocean and her belief that the sea holds both memory and mystery waiting 
+            to be uncovered.
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </div> <!-- END of the#about-layout flex container??????//////////////////////////////////////////////////////////////////////// -->
+
+  <!-- normal block layout -->
+  <section class="justifyPls">
+      <p>Combining her lifelong love of coastal folklore with her background in documentary filmmaking,
+          she began sketching a story that would bridge human vulnerability and oceanic myth. What 
+          began as fragments of journal notes and dreamlike images slowly evolved into the tale of a
+          lost civilization, a guardian creature, and the voices that refuse to be silenced by time.
+        </p>
+    <h2>Discover the Characters</h2>
+      <p>Click on a rune and reveal a character.</p>
+               <div class="cast-icons">
+          <img src="assets/rune3.png" alt="Isla" class="cast-icon" onclick="showCharacter('isla')">
+          <img src="assets/rune6.png" alt="Adrian" class="cast-icon" onclick="showCharacter('adrian')">
+          <img src="assets/rune4.png" alt="Guardian" class="cast-icon" onclick="showCharacter('guardian')">
+          <img src="assets/rune1.png" alt="Noah" class="cast-icon" onclick="showCharacter('noah')">
+          <img src="assets/rune5.png" alt="Elder" class="cast-icon" onclick="showCharacter('elder')">
+          <img src="assets/rune2.png" alt="Eryndor" class="cast-icon" onclick="showCharacter('eryndor')">
+        
+      </div>
+        <div id="characterBox"></div>
+
+  </section>
+</main>
+
+
+    <footer>
+      <script src="js/script.js" defer></script>
+    <p>&copy; 2025 Echoes of the Sea | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+
