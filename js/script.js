@@ -1,5 +1,5 @@
 /*******************************
- * RUNES PAGE INTERACTIVITY
+ * rune page 
  *******************************/
 function showRune(rune) {
   const runeBox = document.getElementById("runeBox");
@@ -33,7 +33,7 @@ function showRune(rune) {
 
 
 /*******************************
- * TIMELINE PAGE INTERACTIVITY
+ * timeline page yoke
  *******************************/
 function showTimeline(event) {
   const contentBox = document.getElementById("timelineContent");
@@ -67,7 +67,7 @@ function showTimeline(event) {
 
 
 /*******************************
- * TRAILER PAGE COUNTDOWN
+ * trailer countdown
  *******************************/
 function trailerCountdown() {
   const countdownElement = document.getElementById("countdownTrailer");
@@ -96,7 +96,7 @@ function trailerCountdown() {
 
 
 /*******************************
- * STREAMING PAGE COUNTDOWN
+ * streamig countdown
  *******************************/
 function streamingCountdown() {
   const countdownElement = document.getElementById("countdownStream");
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*******************************
- *  Cast Selection 
+ *  cast icon selection 
  *******************************/
 function showCharacter(character) {
   const characterBox = document.getElementById("characterBox");
@@ -297,4 +297,3 @@ function showRune(rune) {
 
   runeBox.innerHTML = content;
 }
-
