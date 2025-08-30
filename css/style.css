@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('../assets/herobanner.gif') no-repeat center center fixed;
+    background-size: cover;    color: #222;
+}
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d1b2af2;
+    z-index: 64;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a { 
+    color: #f2eada;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #84b5ff; 
+}
+
+p, h6{
+    font-family: 'Lora', serif;
+    text-align: center;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+    color: #2b4875; 
+}
+
+h2, h3 {
+    color: #4b658c; 
+}
+
+/*******************************
+* HOME PAGEd
+ *******************************/
+.hero {
+    height: 80vh; /*% of screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-image: url("../assets/herobanner.gif");
+    background-size: cover;     /* makes GIF cover the whole area */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    z-index: 1;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #e5e1c5;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fcfaef;
+}
+
+/* Intro Section */
+.intro {
+  padding: 3rem 2rem;
+  background: #f2eada;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #f2eada;
+}
+
+.btn {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #56cfe1;
+}
+/* Content container box */
+.main-container {
+    margin: 2em auto;
+    max-width: 80vw; 
+    min-height: 100vh;
+    justify-content: center;
+    background: #f2eada;
+    padding: 2em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/*******************************
+ *  TIMELINE PAGE 
+ *******************************/
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #00ced1;
+  z-index: -1;
+}
+
+.timeline .notch {
+  background: #343c6c;
+  color: #f2eede;
+  padding: 0.8em 1.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.timeline .notch:hover {
+  background: #f2eede;
+    color: #343c6c;  
+    border: thin dashed #343c6c;
+    transform: scale(1.7);
+}
+
+#timelineBox {
+    margin: 2em auto; 
+    width: 90%;
+    padding: 1.5em;
+    background: #f2eada;
+    border-radius: 8px;
+    text-align: center;
+}
+
+ #timelineContent{
+     display:none; 
+     margin-top:1em; 
+     background:#f2eada; 
+     padding:1em; 
+     border-radius:8px;
+     text-align: center;
+}
+
+/*******************************
+ *  COuntdown Pages for le trailer et le stream
+ *******************************/
+
+#countdownTrailer,
+#countdownStream {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 40vh;
+    background: rgba(75, 101, 140, 0.4);
+    padding: 1.5em;
+    text-align: center;
+    margin: 2em 0;
+    color: #f2efde;
+    text-shadow: 0 0 5px #000;
+}
+
+/*******************************
+ *  About the film page
+ *******************************/
+
+/* Flex container: text left, director right */
+#about-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; /* separates left vs right */
+  gap: 2em;
+  margin: 2em 0;
+}
+
+/* Director profile container (right side) */
+#director-profile {
+  flex: 0 0 30%;                /* fixed width at 30% */
+  display: flex;
+  justify-content: flex-end;    /* pushes the card to the far right */
+}
+
+/* Director profile card */
+.director-card {
+  width: 350px; /* rectangular card */
+  background: rgba(75, 101, 140, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden;
+}
+
+.director-photo {
+  width: 150px;
+  height: 150px;
+  margin: 1em auto 0.5em;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fffacd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.director-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.director-bio {
+  padding: 1em;
+  color: #343144;
+}
+
+.director-bio h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Left-side content */
+#about-content {
+  flex: 1;
+  max-width: 65%;
+  text-align: left;
+}
+
+#about-layout p {
+  text-align: justify;
+}
+
+/* Cast icons row */
+.cast-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+.cast-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fffacd;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cast-icon:hover {
+  transform: scale(1.5);
+}
+
+/* Character profile box */
+#characterBox {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+    text-align: center
+}
+
+.character-card {
+  background: rgba(75, 101, 140, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.5em;
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* Character portrait inside card */
+.character-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fffacd;
+  margin-bottom: 1em;
+}
+
+.character-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.character-card h3, p {
+    
+  text-align: center;
+}
+
+.justifyPls p{
+    text-align: justify;
+}
+
+/*******************************
+ *  runes paage
+ *******************************/
+
+/* Rune icon styling */
+.rune-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin: 2em 0;
+}
+
+.rune-icon {
+  width: 90px;
+  height: 135px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  object-fit: cover;
+}
+
+.rune-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+/* Rune card container */
+#runeBox {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center; /* center horizontally */
+}
+
+/* Rune card */
+.rune-card {
+    max-width: 550px;
+    background: #fffef9;
+    border-width: thick;
+    padding: 1.5em;
+    text-align: center;
+}
+
+/* Rune image inside card */
+.rune-card img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+
+/* Footer */
+footer {
+    width: 100vw;
+    text-align: center;
+    padding: 1.5rem;
+    background: #0d1b2a;
+    color: #fff;
+}
