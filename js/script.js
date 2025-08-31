@@ -144,7 +144,7 @@ function showCharacter(character) {
     case "isla":
       content = `
         <div class="character-card">
-          <img src="assets/isla.jpg" alt="Isla">
+          <img src="assets/Isla.jpg" alt="Isla">
           <h2>Dr. Isla Maren</h2>
           <h3>(portrayed by Jessica Quinn)</h3>
           <p>A gifted young marine biologist searching for truth beneath the waves. 
@@ -157,7 +157,7 @@ function showCharacter(character) {
     case "adrian":
       content = `
         <div class="character-card">
-          <img src="assets/victor.png" alt="Adrian">
+          <img src="assets/Victor.png" alt="Adrian">
           <h2>Adrian Kael</h2>
           <h3>(portrayed by Victor Alaric)</h3>
           <p>A wealthy industrialist funding Isla’s research. 
@@ -170,7 +170,7 @@ function showCharacter(character) {
     case "guardian":
       content = `
         <div class="character-card">
-          <img src="assets/claire.png" alt="Guardian">
+          <img src="assets/Claire.png" alt="Guardian">
           <h2>The Guardian</h2>
           <h3>(portrayed by Claire Redmond)</h3>
           <p>An ancient being bound to the ocean depths, feared 
@@ -183,7 +183,7 @@ function showCharacter(character) {
     case "noah":
       content = `
         <div class="character-card">
-          <img src="assets/mateo.png" alt="Noah">
+          <img src="assets/Mateo.png" alt="Noah">
           <h2>Noah Reyes</h2>
           <h3>(portrayed by Mateo Calderón)</h3>
           <p>A local fisherman and a fellow researcher who has lived with the ocean’s mysteries all his life. 
@@ -297,3 +297,4 @@ function showRune(rune) {
 
   runeBox.innerHTML = content;
 }
+
