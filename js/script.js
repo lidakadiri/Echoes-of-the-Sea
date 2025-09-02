@@ -1,38 +1,4 @@
 /*******************************
- * rune page 
- *******************************/
-function showRune(rune) {
-  const runeBox = document.getElementById("runeBox");
-  let content = "";
-
-  switch (rune) {
-    case "rune1":
-      content = "<h2>ᚠ (Fehu)</h2><p>Symbol of tides, the flow of life and memory. The sea gives, the sea takes, and through its rhythm the truth is revealed.</p>";
-      break;
-    case "rune2":
-      content = "<h2>ᚱ (Raidho)</h2><p>The journey across seas and between realms. To follow its path is to step where past and future converge.</p>";
-      break;
-    case "rune3":
-      content = "<h2>ᚨ (Ansuz)</h2><p>The voice, the whisper, the message carried in the waves. It speaks not only from this world, but others unseen.</p>";
-      break;
-    case "rune4":
-      content = "<h2>ᛉ (Algiz)</h2><p>Protection, the guardian of secrets. To call upon this rune is to stand between danger and salvation.</p>";
-      break;
-    case "rune5":
-      content = "<h2>ᛟ (Othala)</h2><p>Home, the lost world beneath the sea. Though buried and broken, its echo lives within the deep.</p>";
-      break;
-    case "rune6":
-      content = "<h2>ᚷ (Gebo)</h2><p>The gift, the bond between two worlds. To hold it is to bear both the blessing and burden of unity.</p>";
-      break;
-    default:
-      content = "<p>Select a rune to reveal its meaning.</p>";
-  }
-
-  runeBox.innerHTML = content;
-}
-
-
-/*******************************
  * timeline page yoke
  *******************************/
 function showTimeline(event) {
@@ -297,4 +263,5 @@ function showRune(rune) {
 
   runeBox.innerHTML = content;
 }
+
 
